@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+}
+
+body > header {
+    background: coral;
+    padding: 15px 25px;
+}
+
+body > header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+body > header ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+body > header ul li a:hover{
+    text-decoration: underline;
+}
+
+body > main{
+    margin: 20px 0;
+    padding: 15px;
+}
+
+form {
+    width: 540px;
+    margin: 15px auto;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 25px 0;
+}
+
+button[type="submit"]{
+    padding: 5px 15px;
+    background: coral;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+

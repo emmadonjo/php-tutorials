@@ -6,11 +6,12 @@ for($i = 0; $i < count($pls); $i++){
     echo $i + 1 . '. ' . $pls[$i] . "\n";
 }
 
-// for($i = 1; $i <= 100; $i++){
-//     if($i % 6 == 0){
-//         echo $i . "\n";
-//     }
-// }
+for($i = 1; $i <= 100; $i++){
+    // if($i % 6 == 0){
+    //     echo $i . "\n";
+    // }
+    echo $i;
+}
 
 // $m = 'PHP is an amazing programming language.';
 

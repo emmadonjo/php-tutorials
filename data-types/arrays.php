@@ -1,26 +1,48 @@
 <?php 
 
-$names =  []; // array
-// echo  count($names);
-// echo "\n";
+// creating arrays
+$people = ['James', 'Victor', 'Victress'];
+// $mixed_array = ['Name', 546378];
 
-$names[] = "joshua";
-$names[] = 456789;
+// $people = array('james', 'Kemi', 4356728, ['Johnson']);
 
-// echo  count($names);
-// echo "\n";
-// index
-$coding = [
-    'backend' => 'PHP',
-    'frontend' => 'Js',
-    'database' => 'MySQL',
-    'server' => 'apache'
-];
+// adding to an array
+$people[] = 'Gloria';
+// $people[] = 564226;
+// $people[] = ['Hello'];
 
-$output = "<ul>";
+// array_unshift($people, 'J');
+// array_shift($people);
+// array_shift($people);
 
-foreach($coding as $key => $list){
-    echo "<li>$key : $list</li>";
-}
+$formmated = array_map(function($person){
+    return str_pad($person, 10, '*', STR_PAD_BOTH);
+}, $people);
 
-echo "</ul>";
+
+
+var_dump($formmated);
+// $names =  []; // array
+// // echo  count($names);
+// // echo "\n";
+
+// $names[] = "joshua";
+// $names[] = 456789;
+
+// // echo  count($names);
+// // echo "\n";
+// // index
+// $coding = [
+//     'backend' => 'PHP',
+//     'frontend' => 'Js',
+//     'database' => 'MySQL',
+//     'server' => 'apache'
+// ];
+
+// $output = "<ul>";
+
+// foreach($coding as $key => $list){
+//     echo "<li>$key : $list</li>";
+// }
+
+// echo "</ul>";

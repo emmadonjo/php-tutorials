@@ -1,40 +1,40 @@
 <?php
 
-function formatNum(string $num){
-    if(str_starts_with($num, '234') && strlen($num) == 13){
-        return '+' . $num;
-    }
+// function formatNum(string $num){
+//     if(str_starts_with($num, '234') && strlen($num) == 13){
+//         return '+' . $num;
+//     }
 
-    if(str_starts_with($num, '0') && strlen($num) == 11){
-        return '+234' . substr($num, 1);
-    }
-    return $num;
-}
-    $method = $_SERVER['REQUEST_METHOD'];
+//     if(str_starts_with($num, '0') && strlen($num) == 11){
+//         return '+234' . substr($num, 1);
+//     }
+//     return $num;
+// }
+//     $method = $_SERVER['REQUEST_METHOD'];
 
-    $contacts = [];
+//     $contacts = [];
 
-    if($method == 'POST'){
-        $uploaded = $_FILES['contacts'];
+//     if($method == 'POST'){
+//         $uploaded = $_FILES['contacts'];
 
-        $file = fopen($uploaded['tmp_name'], 'r');
-            while(!feof($file)){
+//         $file = fopen($uploaded['tmp_name'], 'r');
+//             while(!feof($file)){
 
-                $line = fgets($file);
+//                 $line = fgets($file);
 
-                if(!empty(trim($line))){
-                    $data = explode('|', $line);
-                    // echo formatNum($data[1]);
+//                 if(!empty(trim($line))){
+//                     $data = explode('|', $line);
+//                     // echo formatNum($data[1]);
 
-                    // format numbers to +234
-                    array_push($contacts,  [$data[0], formatNum(trim($data[1]))]);
-                }
-            }
-        fclose($file);
-    }
-
+//                     // format numbers to +234
+//                     array_push($contacts,  [$data[0], formatNum(trim($data[1]))]);
+//                 }
+//             }
+//         fclose($file);
+//     }
     // print_r($contacts);
 
+    
 ?>
 
 
